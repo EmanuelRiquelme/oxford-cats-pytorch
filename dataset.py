@@ -4,7 +4,7 @@ import os
 from  PIL import Image
 from torchvision import transforms
 
-class Cat_breed(Dataset):
+class Cat_breads(Dataset):
     def __init__(self, root_dir = 'cats-breads',transform = False):
         self.root_dir = root_dir
         self.labels = self.__getlabels__()
