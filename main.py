@@ -1,5 +1,5 @@
 import torch
-from dataset import Cat_breads
+from dataset import Cat_breeds
 from torch.utils.data import DataLoader
 import torch.optim as optim
 import torch.nn as nn
@@ -9,7 +9,7 @@ import os
 from utils import validation,save_model,load_model
 
 
-dataset = Cat_breads()
+dataset = Cat_breeds()
 train_size = round(int(len(dataset)*.8))
 test_size = len(dataset)-train_size
 train_set, val_set = torch.utils.data.random_split(dataset, [train_size,test_size])
